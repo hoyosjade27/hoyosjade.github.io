@@ -1,1 +1,135 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Amelia Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <!-- Removed AOS CSS -->
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Jade</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#work-experience">Experience</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work-experience">Experience</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+        <section id="home">
+            <div class="main-container">
+                <div class="image fade-in">
+                    <img src="images/Jade.JPG" alt="">
+                </div>
+                <div class="content">
+                    <h1 class="fade-in" style="animation-delay:0.2s">Hey I'm <span>Jade</span></h1>
+                    <div class="typewriter fade-in" style="animation-delay:0.4s">I'm a <span></span></div>
+                    <p class="fade-in" style="animation-delay:0.6s">Dreams begin in quiet moments, Pain shows us how strong we are. Love grows when times are tough, And hope lights up the dark.</p>
+                    <div class="social-links fade-in" style="animation-delay:0.8s">
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn fade-in" style="animation-delay:1s">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="fade-in" style="animation-delay:0.2s">
+            <div class="main-container">
+                <div class="content">
+                    <div class="about-card" style="text-align: center;">
+                        <h2>About Me</h2>
+                        <p>Hi, I'm Jade—a passionate developer, designer, and digital explorer. I love turning ideas into elegant code, blending creativity with functionality to build experiences that matter.</p>
+                        <div style="margin-top:24px;font-size:1.2rem;">
+                            <strong>Address:</strong> Purok 2, Brgy. San Vicente, Sumilao, Bukidnon, Philippines
+                        </div>
+                        <div style="margin-top:16px;font-size:1.2rem;">
+                            <strong>Education:</strong> Bachelor of Science in Information Technology, Bukidnon State University<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="fade-in" style="animation-delay:0.4s">
+            <div class="main-container">
+                <div class="content">
+                    <div class="skills-card">
+                        <h2>Skills</h2>
+                        <div class="skills-list">
+                            <div class="skill"><i class="fab fa-html5 html"></i>HTML</div>
+                            <div class="skill"><i class="fab fa-css3-alt css"></i>CSS</div>
+                            <div class="skill"><i class="fab fa-js js"></i>JavaScript</div>
+                            <div class="skill"><i class="fab fa-react react"></i>React</div>
+                            <div class="skill"><i class="fab fa-node node"></i>Node.js</div>
+                            <div class="skill"><i class="fa-brands fa-angular angular"></i>Angular</div>
+                            <!-- Add more skills as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work-experience" class="fade-in" style="animation-delay:0.6s">
+            <div class="main-container" style="display:flex;justify-content:flex-start;">
+                <div class="content" style="width:100%;text-align:left;">
+                    <div class="skills-card">
+                        <h2>Work Experience</h2>
+                        <div class="skills-list">
+                            <div class="skill">Technical report development</div>
+                            <div class="skill">Database optimization</div>
+                            <div class="skill">Network configuration & troubleshooting</div>
+                            <div class="skill">Professional communication refinement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in" style="animation-delay:0.8s">
+            <div class="main-container">
+                <div class="content">
+                    <div class="contact-card">
+                        <h2>Contact Me</h2>
+                        <p>Have a question or want to work together? Drop me a line!</p>
+                        <form>
+                            <input type="text" placeholder="Your Name" required style="width:80%;padding:10px;font-size:1rem;">
+                            <input type="email" placeholder="Your Email" required style="width:80%;padding:10px;font-size:1rem;">
+                            <textarea placeholder="Your Message" required style="width:80%;padding:10px;font-size:1rem;min-height:80px;"></textarea>
+                            <button type="submit" style="width:60%;height:48px;background-color:rgb(109,67,0);color:white;font-size:1.2rem;font-weight:700;border-radius:5px;border:none;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="app.js"></script>
+        <footer style="width:100%;background:rgba(255,255,255,0.85);padding:32px 0;margin-top:48px;box-shadow:0 -2px 16px rgba(109,67,0,0.08);text-align:center;">
+            <div style="font-size:1.2rem;color:#3d2600;">
+                <strong>Contact Info:</strong><br>
+                Email: <a href="mailto:hoyosjade27@gmail.com" style="color:#3d2600;text-decoration:underline;">hoyosjade27@gmail.com</a><br>
+                Phone: <a href="tel:+639355037174" style="color:#3d2600;text-decoration:underline;">+63 935 503 7174</a>
+            </div>
+        </footer>
+</body>
+</html>

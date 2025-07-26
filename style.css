@@ -126,7 +126,7 @@ nav {
     background-color: rgb(109,67, 0);
 }
 .nav-container .contact-btn:hover a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .nav-container .links a:hover{

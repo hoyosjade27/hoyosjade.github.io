@@ -259,9 +259,9 @@ section{
     0%, 33%{
         content: "Developer";
     }
-    34%, 66%{
+    /* 34%, 66%{
         content: "Designer";
-    }
+    } */
     /* 67%, 100%{
         content: "Youtuber";
     } */
